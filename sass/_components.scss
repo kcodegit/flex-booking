@@ -1,12 +1,17 @@
+// Flexbox children
+
 //======================================
 // LOGO
 .logo {
   height: 3.5rem;
+  margin-left: 3rem;
 }
 
 //======================================
 // SEARCH
 .search {
+  flex: 0 0 40%;
+
   &__input {
   }
 
