@@ -215,6 +215,7 @@
 
   &__stars {
     margin-right: auto; // flex box hack!!
+    display: flex;
   }
 
   &__icon-star,
