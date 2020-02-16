@@ -353,10 +353,8 @@
   }
 
   &__photo {
+    @include user-photo;
     box-sizing: content-box;
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 50%;
     border: 3px solid #fff;
 
     &:not(:last-child) {
@@ -377,8 +375,6 @@
   }
 
   &__photo {
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 50%;
+    @include user-photo;
   }
 }
