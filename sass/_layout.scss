@@ -44,7 +44,10 @@
 }
 
 .description {
-  background-color: orange; //tmp
+  font-size: 1.4rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
   flex: 0 1 60%;
   margin-right: 4.5rem;
 }
