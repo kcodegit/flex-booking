@@ -35,3 +35,21 @@
   // temp
   height: 80rem;
 }
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: 1px solid var(--color-grey-light-2);
+}
+
+.description {
+  background-color: orange; //tmp
+  flex: 0 1 60%;
+  margin-right: 4.5rem;
+}
+
+.user-reviews {
+  background-color: palegreen; //tmp
+  flex: 0 1 40%;
+}
