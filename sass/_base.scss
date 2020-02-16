@@ -24,6 +24,9 @@ Primary dark: #BA265D
 
   // shadows
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+
+  // border line
+  --line: 1px solid var(--color-grey-light-2);
 }
 
 * {
