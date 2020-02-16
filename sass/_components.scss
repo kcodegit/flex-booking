@@ -364,3 +364,21 @@
     }
   }
 }
+
+//======================================
+// REVIEWS
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+
+  &__photo {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+  }
+}
