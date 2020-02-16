@@ -369,12 +369,61 @@
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
+  position: relative;
+  overflow: hidden;
 
   &:not(:last-child) {
     margin-bottom: 3.5rem;
   }
 
+  &__text {
+    margin-bottom: 1.7rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &__photo {
     @include user-photo;
+    margin-right: 1.5rem;
+  }
+
+  &__user-box {
+    margin-right: auto;
+  }
+
+  &__user-name {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+
+  &__user-date {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-grey-dark-3);
+  }
+
+  &__rating {
+    font-size: 2rem;
+    color: var(--color-primary);
+  }
+
+  &::before {
+    content: '\201C';
+    position: absolute;
+    top: -2.75rem;
+    left: -1rem;
+    font-size: 20rem;
+    line-height: 1;
+    color: var(--color-grey-light-2);
+    font-family: sans-serif;
+    z-index: 1;
   }
 }
