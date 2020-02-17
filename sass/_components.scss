@@ -126,11 +126,24 @@
   list-style: none;
   margin-top: 3rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
 
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+    }
+
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 0;
+      }
     }
 
     &::before {
@@ -166,6 +179,11 @@
     align-items: center;
     position: relative;
     z-index: 10;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+      padding: 2rem;
+    }
   }
 
   &__icon {
@@ -183,6 +201,10 @@
   color: var(--color-grey-light-2);
   padding: 2.5rem;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
 ////////////////////////////////////////
@@ -361,13 +383,17 @@
     margin-right: auto;
   }
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     @include user-photo;
     box-sizing: content-box;
     border: 3px solid #fff;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }
@@ -383,6 +409,14 @@
 
   &:not(:last-child) {
     margin-bottom: 3.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
   }
 
   &__text {
@@ -442,6 +476,10 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem 0;
+  }
 
   &__book-now {
     font-size: 2rem;
